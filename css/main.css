@@ -2547,12 +2547,17 @@ a.logo img {
 }
 
 @media (max-width: 767px) {
-  .header-actions > li {
-    display: none;
+  .header-actions {
+    display: flex;
   }
-  .header-actions > li:last-child {
-    display: block;
-    border-left: 0;
+
+  .header-actions li {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-actions li img {
+    width: 80px;
   }
 }
 
