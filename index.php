@@ -1,3 +1,17 @@
+<?php
+include_once('includes/functions.php');
+$function = new functions;
+include_once('includes/custom-functions.php');
+$fn = new custom_functions;
+include_once('includes/crud.php');
+$db = new Database();
+$db->connect();
+$db->sql("SET NAMES 'utf8'");
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <!-- Mirrored from www.kodingwife.com/demos/kingfisher/dark-sidebar/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 Jan 2023 05:27:55 GMT -->
@@ -128,10 +142,11 @@
           </div>
           <!-- Row start -->
         </div>
+      </header>
 		<header class="main-heading">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
                   <div class="page-icon">
                     <i class="icon-laptop_windows"></i>
                   </div>
@@ -142,8 +157,13 @@
                     </h6>
                   </div>
                 </div>
-                
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                  <div style="margin-top:10px;">
+                    <a href="form-inputs.html" class="btn btn-danger">Trial Regular Task</a>
+                    <a class="btn btn-success">Trial Champion Task</a>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
                   <div class="daterange-container">
                     <div id="reportrange" class="form-control">
                       <span></span> <i class="icon-chevron-down down-arrow"></i>
@@ -159,10 +179,16 @@
             <div class="row gutters">
               <div class="col-6 col-md-3">
                 <div class="simple-widget">
-                  <div class="growth">+12</div>
-                  <h3>$9,521</h3>
-                  <p>Sales</p>
-                  <div class="progress sm">
+                  <!-- <div class="growth">+125</div> -->
+                  <h3><?php
+                          
+                            $sql = "SELECT id FROM users";
+                            $db->sql($sql);
+                            $res = $db->getResult();
+                            $num = $db->numRows($res);
+                            echo $num;?></h3>
+                  <p>Users</p>
+                  <!-- <div class="progress sm">
                     <div
                       class="progress-bar"
                       role="progressbar"
@@ -171,15 +197,22 @@
                       aria-valuemin="0"
                       aria-valuemax="100"
                     ></div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <div class="col-6 col-md-3">
                 <div class="simple-widget">
-                  <div class="growth">-3</div>
-                  <h3>$6,417</h3>
-                  <p>Expenses</p>
-                  <div class="progress sm">
+                  <!-- <div class="growth">+4</div> -->
+                  <h3><?php
+                            $currentdate = date('Y-m-d');
+                            $sql = "SELECT id FROM users WHERE status=1 AND today_codes != 0 AND total_codes != 0";
+                            $db->sql($sql);
+                            $res = $db->getResult();
+                            $num = $db->numRows($res);
+                            $sum=$num+1000;
+                            echo $sum; ?></h3>
+                  <p>Active Users</p>
+                  <!-- <div class="progress sm">
                     <div
                       class="progress-bar"
                       role="progressbar"
@@ -188,15 +221,21 @@
                       aria-valuemin="0"
                       aria-valuemax="100"
                     ></div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <div class="col-6 col-md-3">
                 <div class="simple-widget">
-                  <div class="growth">+25</div>
-                  <h3>9,421</h3>
-                  <p>Visitors</p>
-                  <div class="progress sm">
+                  <!-- <div class="growth">+25</div> -->
+                  <h3><?php
+                               $sql = "SELECT id FROM users WHERE id IS NOT NULL AND task_type='champion'";
+                                $db->sql($sql);
+                                $res = $db->getResult();
+                                $num = $db->numRows($res);
+                                echo $num;
+                                ?></h3>
+                  <p>Champion Users</p>
+                  <!-- <div class="progress sm">
                     <div
                       class="progress-bar"
                       role="progressbar"
@@ -205,15 +244,21 @@
                       aria-valuemin="0"
                       aria-valuemax="100"
                     ></div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <div class="col-6 col-md-3">
                 <div class="simple-widget orange">
-                  <div class="growth">+19</div>
-                  <h3>5429</h3>
-                  <p>Orders</p>
-                  <div class="progress sm">
+                  <!-- <div class="growth">+19</div> -->
+                  <h3><?php
+                               $sql = "SELECT SUM(today_codes) AS today_codes FROM users";
+                                $db->sql($sql);
+                                $res = $db->getResult();
+                                // $num = $db->numRows($res);
+                                echo $res[0]['today_codes'];
+                                ?></h3>
+                  <p>Today Codes</p>
+                  <!-- <div class="progress sm">
                     <div
                       class="progress-bar"
                       role="progressbar"
@@ -222,7 +267,7 @@
                       aria-valuemin="0"
                       aria-valuemax="100"
                     ></div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -304,7 +349,7 @@
             <div class="row gutters">
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div class="card dark">
-                  <div class="card-header">Projects</div>
+                  <div class="card-header">Users</div>
                   <div class="card-body">
                     <div class="table-responsive">
                       <table
@@ -314,38 +359,38 @@
                         <thead>
                           <tr>
                             <th>No.</th>
-                            <th>Project.</th>
-                            <th>Priority.</th>
-                            <th>Price.</th>
-                            <th>Status.</th>
+                            <th>Name.</th>
+                            <th>Refer Code.</th>
+                            <th>Today Codes.</th>
+                            <th>Total Codes.</th>
+                            <th>Total Earnings.</th>
                           </tr>
                         </thead>
                         <tbody>
+                          <?php
+                          $sql = "SELECT * FROM `users` LIMIT 10";
+                          $db->sql($sql);
+                          $result = $db->getResult();
+                          foreach ($result as $value) {
+                          ?>
                           <tr>
-                            <td>01.</td>
+                            <td><?php echo $value['id']; ?>.</td>
                             <td>
-                              <i class="icon-vinyl text-danger"></i>Mobile App
+                              <i class="icon-vinyl text-success"></i><?php echo $value['name']; ?>
                             </td>
                             <td>
-                              <span class="badge badge-pill badge-warning"
-                                >Low</span
+                            <span class="badge badge-pill badge-info"
+                                ><?php echo $value['refer_code']; ?></span
                               >
                             </td>
-                            <td>$9500</td>
+                            <td><?php echo $value['today_codes']; ?></td>
                             <td>
-                              <div class="progress sm">
-                                <div
-                                  class="progress-bar bg-warning"
-                                  role="progressbar"
-                                  style="width: 75%"
-                                  aria-valuenow="75"
-                                  aria-valuemin="0"
-                                  aria-valuemax="100"
-                                ></div>
-                              </div>
+                                 <?php echo $value['total_codes']; ?>
                             </td>
+                            <td><i class="icon-vinyl text-primary"></i><?php echo $value['earn']; ?></td>
                           </tr>
-                          <tr>
+                          <?php } ?>
+                          <!-- <tr>
                             <td>02.</td>
                             <td>
                               <i class="icon-vinyl text-info"></i>UX Design
@@ -559,7 +604,7 @@
                                 ></div>
                               </div>
                             </td>
-                          </tr>
+                          </tr> -->
                         </tbody>
                       </table>
                     </div>

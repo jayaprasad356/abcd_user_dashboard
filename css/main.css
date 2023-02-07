@@ -969,6 +969,98 @@ h5.custom {
   background: #e6ecf3;
 }
 
+/*trial form style */
+@media (min-width: 700px) {
+  #trial {
+    width: 35%;
+    margin: 0 auto;
+  }
+}
+#trial {
+  background-color: #4d4a75 !important;
+}
+#trial .form-group label {
+  color: #d2bc6c;
+  font-weight: 900;
+}
+#trial form button {
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+}
+.input-boxes {
+  display: flex;
+}
+.box {
+  text-align: center !important;
+}
+.form-group .input-boxes input {
+  width: 30%;
+  padding-left: 0%;
+  border-radius: 3px;
+  margin-right: 2px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.outer-circle {
+  background-color: white;
+}
+
+.inner-circle {
+  background-color: white;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position: absolute;
+  top: 12.5px;
+  text-align: center;
+  line-height: 75px;
+  margin-left: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: #4d4a75;
+}
+#sync {
+  color: black;
+  margin-top: 6px;
+  border-radius: 5px;
+}
+.rectangle {
+  border: 2px solid white;
+  text-align: center;
+  background-color: #f2c134;
+  border-radius: 5px;
+  height: 70px;
+  color: black;
+}
+.rectangle p,
+span {
+  font-size: 15px;
+  font-weight: 900;
+}
+#earnings {
+  margin-top: 2px;
+}
+#earnings li {
+  margin-top: 8px;
+  color: white;
+}
+#messages {
+  font-weight: 900;
+  text-align: center !important;
+  margin-top: 10px;
+  font-size: medium;
+}
+
+/* end-form  */
+
 .main-content.white {
   background: #ffffff;
   border-bottom: 1px solid #e1e5f1;
@@ -2557,7 +2649,7 @@ a.logo img {
   }
 
   .header-actions li img {
-    width: 80px;
+    width: 70px;
   }
 }
 
