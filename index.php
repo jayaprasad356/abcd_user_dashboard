@@ -209,8 +209,7 @@ $db->sql("SET NAMES 'utf8'");
                             $db->sql($sql);
                             $res = $db->getResult();
                             $num = $db->numRows($res);
-                            $sum=$num+1000;
-                            echo $sum; ?></h3>
+                            echo $num; ?></h3>
                   <p>Active Users</p>
                   <!-- <div class="progress sm">
                     <div
