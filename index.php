@@ -127,8 +127,7 @@ $currentdate = date('Y-m-d');
               </div>
               <!-- Live updates end -->
             </div>
-            <div class="col-xl-5 col-lg-5 col-md-6 col-sm-5 col-5">
-              <!-- Header actions start -->
+            <!-- <div class="col-xl-5 col-lg-5 col-md-6 col-sm-5 col-5">
               <ul class="header-actions">
                   <li>
                     <a href="https://play.google.com/store/apps/details?id=com.app.abcdapp">
@@ -139,8 +138,7 @@ $currentdate = date('Y-m-d');
                       <img src="img/whatsapp.png" height="40" alt=""></a>
                   </li>
               </ul>
-              <!-- Header actions end -->
-            </div>
+            </div> -->
           </div>
           <!-- Row start -->
         </div>
@@ -155,7 +153,7 @@ $currentdate = date('Y-m-d');
                     <div class="page-title">
                       <h3>Dashboard</h3>
                       <h6 class="sub-heading">
-                        Welcome to ABCD Website
+                        Welcome to ABCD Freelancing Job
                       </h6>
                     </div>
                   </div>
@@ -828,7 +826,7 @@ $currentdate = date('Y-m-d');
                             <tr>
                               <th>No.</th>
                               <th>Name.</th>
-                              <th>Withdrawal Type.</th>
+                              <!-- <th>Withdrawal Type.</th> -->
                               <th>Amount.</th>
                               <th>Status.</th>
                               <th>Datetime.</th>
@@ -849,9 +847,9 @@ $currentdate = date('Y-m-d');
                               <td>
                                 <i class="icon-vinyl text-success"></i><?php echo $value['name']; ?>
                               </td>
-                              <td>
+                              <!-- <td>
                                 <i class="icon-vinyl text-warning"></i><?php echo $value['withdrawal_type']; ?>
-                              </td>
+                              </td> -->
                               <td>
                                 ₹<?php echo $value['amount']; ?></span
                                 >
@@ -872,65 +870,110 @@ $currentdate = date('Y-m-d');
                 
               </div>
               <!-- Row end -->
+              <br>
 
+              <h5 class="text-center" style="color:#4878b5;font-weight:bold;font-size:35px;">Learn From Tutorials</h5>
+              <br>
               <!-- Row start -->
               <div class="row gutters">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                  <div class="card">
-                    <div class="card-header">Sales</div>
-                    <div class="toggle-switch tr">
-                      <input type="checkbox" class="check" />
-                      <b class="b switch"></b>
-                      <b class="b track"></b>
-                    </div>
-                    <div class="tags-container">
-                      <input
-                        type="text"
-                        autocomplete="off"
-                        name="tags"
-                        placeholder="Add tag"
-                        class="tm-input tm-tag-plain tm-input-01"
-                        data-original-title=""
-                      />
-                    </div>
-                    <div class="card-body">
-                      <div id="areaChart" class="chart-height-lg"></div>
-                      <div class="spacer20"></div>
-                      <div class="row gutters">
-                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
-                          <div class="info-stats">
-                            <span class="info-label"></span>
-                            <p class="info-title">Daily Sales</p>
-                            <h4 class="info-total">9,850</h4>
-                          </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
-                          <div class="info-stats">
-                            <span class="info-label red"></span>
-                            <p class="info-title">Weekly Sales</p>
-                            <h4 class="info-total">57,985</h4>
-                          </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
-                          <div class="info-stats">
-                            <span class="info-label green"></span>
-                            <p class="info-title">Monthly Sales</p>
-                            <h4 class="info-total">2,50,900</h4>
-                          </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-6">
-                          <div class="info-stats">
-                            <span class="info-label yellow"></span>
-                            <p class="info-title">Yearly Sales</p>
-                            <h4 class="info-total red">99,95,500</h4>
-                          </div>
-                        </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                     <h5 class="text-center" style="font-family:Monospace;">How To Signup?</h5>
+                      <div class="video-container">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/5BQQM4uvRkw?rel=0" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                          </iframe>
                       </div>
-                    </div>
-                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                      <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How to Work In Regular Task?</h5>
+                      <div class="video-container">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/uGzrq_-lcT8?rel=0" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                          </iframe>
+                      </div>
                 </div>
               </div>
+              <br>
+            
+              <div class="row gutters">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                     <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How To Work In Champion Task?</h5>
+                      <div class="video-container">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/l_ddxKWNZqI?rel=0" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                          </iframe>
+                      </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                      <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How To Withdraw Earning?</h5>
+                      <div class="video-container">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/mtqthbDn76w?rel=0" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                          </iframe>
+                      </div>
+                </div>
+              </div>
+               <br>
+              <div class="row gutters">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                     <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How To Refer & Earn?</h5>
+                      <div class="video-container">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/uGzrq_-lcT8?rel=0" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                          </iframe>
+                      </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                      <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Users Chat Support?</h5>
+                      <div class="video-container">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/mtqthbDn76w?rel=0" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                          </iframe>
+                      </div>
+                </div>
+              </div>
+              <br>
+              <br>
+              <h5 class="text-center" style="color:#4878b5;font-weight:bold;font-size:35px;margin-bottom:20px;">Download App from Playstore & Start your earnings.</h5>
+              <!-- Row start -->
+              <div class="row gutters">
+                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-12 text-center">
+                          <a href="https://play.google.com/store/apps/details?id=com.app.abcdapp">
+                                          <img src="img/playstore-1.png" class="img-fluid" alt=""></a>
+                  </div>
+              </div>
               <!-- Row end -->
+              <br>
+              <br>
+              <h5 class="text-center" style="color:#4878b5;font-weight:bold;font-size:35px;margin-bottom:20px;">Reach us for any clarifications </h5>
+              <div class="row gutters">
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-12 text-center">
+                          <a href="https://wa.me/7676636990" target="_blank">
+                            <img src="img/whatsapp.png" class="img-fluid" alt=""></a>
+                  </div>
+
+              </div>
+               <!---tutorials page end--->
+
+
         </div>
         <!-- END: .main-content -->
       <!-- BEGIN .main-footer -->
