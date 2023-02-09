@@ -561,7 +561,7 @@ $currentdate = date('Y-m-d');
                             $currentdate = date('Y-m-d');
                             $today = $currentdate . ' 00:00:00';
                             $tomorrow = date("Y-m-d", strtotime("+1 day", strtotime($currentdate))) . ' 00:00:00';
-                            $sql = "SELECT *,withdrawals.id AS id,withdrawals.status AS status FROM withdrawals,users WHERE withdrawals.status!=1 AND withdrawals.datetime BETWEEN '$today' AND '$tomorrow' AND users.id=withdrawals.user_id";
+                            $sql = "SELECT *,withdrawals.id AS id,withdrawals.status AS status FROM withdrawals,users WHERE withdrawals.status!=1 AND withdrawals.datetime BETWEEN '$today' AND '$tomorrow' AND users.id=withdrawals.user_id ORDER BY withdrawals.amount DESC LIMIT 50";
                             $db->sql($sql);
                             $result = $db->getResult();
                             foreach ($result as $value) {
@@ -835,7 +835,7 @@ $currentdate = date('Y-m-d');
                             $currentdate = date('Y-m-d H:i:s');
                             $yesterday = date("Y-m-d 00:00:00", strtotime("-1 day", strtotime($currentdate)));
                             $tomorrow = date("Y-m-d 00:00:00", strtotime("+1 day", strtotime($currentdate)));
-                            $sql = "SELECT *,withdrawals.id AS id,withdrawals.status AS status FROM withdrawals,users WHERE withdrawals.status=1 AND withdrawals.datetime BETWEEN '$yesterday' AND '$tomorrow' - INTERVAL 1 SECOND AND users.id=withdrawals.user_id LIMIT 500";
+                            $sql = "SELECT *,withdrawals.id AS id,withdrawals.status AS status FROM withdrawals,users WHERE withdrawals.status=1 AND withdrawals.datetime BETWEEN '$yesterday' AND '$tomorrow' - INTERVAL 1 SECOND AND users.id=withdrawals.user_id ORDER BY withdrawals.amount DESC LIMIT 50";
                             $db->sql($sql);
                             $result = $db->getResult();
                             foreach ($result as $value) {
