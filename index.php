@@ -871,20 +871,18 @@ $currentdate = date('Y-m-d');
               <br>
 
              <div id="tutorial" class="text-center">
-                <h5 class="text-center" style="color:#4878b5;font-weight:bold;font-size:35px;">Learn From Tutorials</h5>
+                <h5 style="color:#4878b5;font-weight:bold;font-size:35px;">Learn From Tutorials</h5>
                   <br>
                   <!-- Row start -->
                   <div class="row gutters">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                        <h5 class="text-center" style="font-family:Monospace;">How To Signup?</h5>
-                          <div class="video-container">
-                              <iframe width="450" height="315" src="https://www.youtube.com/embed/5BQQM4uvRkw?rel=0" 
+                        <h5 style="font-family:Monospace;">How To Signup?</h5>
+                              <iframe width="100%" height="300" src="https://www.youtube.com/embed/5BQQM4uvRkw?rel=0" 
                                 title="YouTube video player" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen>
                               </iframe>
-                          </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                           <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How to Work In Regular Task?</h5>
