@@ -870,86 +870,88 @@ $currentdate = date('Y-m-d');
               <!-- Row end -->
               <br>
 
-              <h5 class="text-center" style="color:#4878b5;font-weight:bold;font-size:35px;">Learn From Tutorials</h5>
-              <br>
-              <!-- Row start -->
-              <div class="row gutters">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                     <h5 class="text-center" style="font-family:Monospace;">How To Signup?</h5>
-                      <div class="video-container">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/5BQQM4uvRkw?rel=0" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen>
-                          </iframe>
-                      </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                      <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How to Work In Regular Task?</h5>
-                      <div class="video-container">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/uGzrq_-lcT8?rel=0" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen>
-                          </iframe>
-                      </div>
-                </div>
-              </div>
-              <br>
-            
-              <div class="row gutters">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                     <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How To Work In Champion Task?</h5>
-                      <div class="video-container">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/l_ddxKWNZqI?rel=0" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen>
-                          </iframe>
-                      </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                      <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How To Withdraw Earning?</h5>
-                      <div class="video-container">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/mtqthbDn76w?rel=0" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen>
-                          </iframe>
-                      </div>
-                </div>
-              </div>
-               <br>
-              <div class="row gutters">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                     <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How To Refer & Earn?</h5>
-                      <div class="video-container">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/uGzrq_-lcT8?rel=0" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen>
-                          </iframe>
-                      </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                      <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Users Chat Support?</h5>
-                      <div class="video-container">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/mtqthbDn76w?rel=0" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen>
-                          </iframe>
-                      </div>
-                </div>
-              </div>
-              <br>
-              <br>
+             <div id="tutorial" class="text-center">
+                <h5 class="text-center" style="color:#4878b5;font-weight:bold;font-size:35px;">Learn From Tutorials</h5>
+                  <br>
+                  <!-- Row start -->
+                  <div class="row gutters">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <h5 class="text-center" style="font-family:Monospace;">How To Signup?</h5>
+                          <div class="video-container">
+                              <iframe width="450" height="315" src="https://www.youtube.com/embed/5BQQM4uvRkw?rel=0" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                              </iframe>
+                          </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                          <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How to Work In Regular Task?</h5>
+                          <div class="video-container">
+                              <iframe width="450" height="315" src="https://www.youtube.com/embed/uGzrq_-lcT8?rel=0" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                              </iframe>
+                          </div>
+                    </div>
+                  </div>
+                  <br>
+                
+                  <div class="row gutters">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How To Work In Champion Task?</h5>
+                          <div class="video-container">
+                              <iframe width="450" height="315" src="https://www.youtube.com/embed/l_ddxKWNZqI?rel=0" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                              </iframe>
+                          </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                          <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How To Withdraw Earning?</h5>
+                          <div class="video-container">
+                              <iframe width="450" height="315" src="https://www.youtube.com/embed/mtqthbDn76w?rel=0" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                              </iframe>
+                          </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row gutters">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How To Refer & Earn?</h5>
+                          <div class="video-container">
+                              <iframe width="450" height="315" src="https://www.youtube.com/embed/uGzrq_-lcT8?rel=0" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                              </iframe>
+                          </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                          <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Users Chat Support?</h5>
+                          <div class="video-container">
+                              <iframe width="450" height="315" src="https://www.youtube.com/embed/mtqthbDn76w?rel=0" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                              </iframe>
+                          </div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+             </div>
               <h5 class="text-center" style="color:#4878b5;font-weight:bold;font-size:35px;margin-bottom:20px;">Download App from Playstore & Start your earnings.</h5>
               <!-- Row start -->
               <div class="row gutters">
@@ -965,7 +967,7 @@ $currentdate = date('Y-m-d');
               <div class="row gutters">
                   <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-12 text-center">
                           <a href="https://wa.me/7676636990" target="_blank">
-                            <img src="img/whatsapp.png" class="img-fluid" alt=""></a>
+                            <img src="img/whatsapp.png"  height="50" alt=""></a>
                   </div>
 
               </div>
