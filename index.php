@@ -247,12 +247,17 @@ $currentdate = date('Y-m-d');
                 <div class="col-12 col-md-3">
                   <div class="simple-widget purple">
                     <h3><?php
-                              $sql = "SELECT SUM(today_codes)*(0.17) AS total_earnings FROM users";
+                              $date = date('Y-m-d');
+                              $sql = "SELECT SUM(amount) AS total_earnings 
+                              FROM withdrawals 
+                              WHERE datetime >= DATE_SUB(DATE_FORMAT('$date', '%Y-%m-01'), INTERVAL 1 MONTH)
+                              AND datetime < DATE_FORMAT('$date', '%Y-%m-01')
+                              ";
                               $db->sql($sql);
                               $res = $db->getResult();
                               echo 'Rs.' .$res[0]['total_earnings'];
                               ?></h3>
-                    <p>Today Total Earnings</p>
+                    <p> Last Month Paid Withdrawals</p>
                     <!-- <div class="progress sm">
                       <div
                         class="progress-bar"
@@ -286,13 +291,12 @@ $currentdate = date('Y-m-d');
                               <th>Task Type</th>
                               <th>Refer Code.</th>
                               <th>Today Codes.</th>
-                              <th>Total Codes.</th>
                               <th>Total Earnings.</th>
                             </tr>
                           </thead>
                           <tbody>
                             <?php
-                            $sql = "SELECT * FROM `users` ORDER BY total_codes DESC, earn DESC  LIMIT 50";
+                            $sql = "SELECT * FROM `users` ORDER BY today_codes DESC, earn DESC  LIMIT 1000";
                             $db->sql($sql);
                             $result = $db->getResult();
                             foreach ($result as $value) {
@@ -310,9 +314,8 @@ $currentdate = date('Y-m-d');
                                   ><?php echo $value['refer_code']; ?></span
                                 >
                               </td>
-                              <td><?php echo $value['today_codes']; ?></td>
                               <td>
-                                  <?php echo $value['total_codes']; ?>
+                                  <?php echo $value['today_codes']; ?>
                               </td>
                               <td><i class="icon-vinyl text-primary"></i><?php echo $value['earn']; ?></td>
                             </tr>
@@ -562,7 +565,7 @@ $currentdate = date('Y-m-d');
                             $currentdate = date('Y-m-d');
                             $today = $currentdate . ' 00:00:00';
                             $tomorrow = date("Y-m-d", strtotime("+1 day", strtotime($currentdate))) . ' 00:00:00';
-                            $sql = "SELECT *,withdrawals.id AS id,withdrawals.status AS status FROM withdrawals,users WHERE withdrawals.status!=1 AND withdrawals.datetime BETWEEN '$today' AND '$tomorrow' AND users.id=withdrawals.user_id ORDER BY withdrawals.amount DESC LIMIT 50";
+                            $sql = "SELECT *,withdrawals.id AS id,withdrawals.status AS status FROM withdrawals,users WHERE withdrawals.status!=1 AND withdrawals.datetime BETWEEN '$today' AND '$tomorrow' AND users.id=withdrawals.user_id ORDER BY withdrawals.amount DESC LIMIT 500";
                             $db->sql($sql);
                             $result = $db->getResult();
                             foreach ($result as $value) {
@@ -836,7 +839,7 @@ $currentdate = date('Y-m-d');
                             $currentdate = date('Y-m-d H:i:s');
                             $yesterday = date("Y-m-d 00:00:00", strtotime("-1 day", strtotime($currentdate)));
                             $tomorrow = date("Y-m-d 00:00:00", strtotime("+1 day", strtotime($currentdate)));
-                            $sql = "SELECT *,withdrawals.id AS id,withdrawals.status AS status FROM withdrawals,users WHERE withdrawals.status=1 AND withdrawals.datetime BETWEEN '$yesterday' AND '$tomorrow' - INTERVAL 1 SECOND AND users.id=withdrawals.user_id ORDER BY withdrawals.amount DESC LIMIT 50";
+                            $sql = "SELECT *,withdrawals.id AS id,withdrawals.status AS status FROM withdrawals,users WHERE withdrawals.status=1 AND withdrawals.datetime BETWEEN '$yesterday' AND '$tomorrow' - INTERVAL 1 SECOND AND users.id=withdrawals.user_id ORDER BY withdrawals.amount DESC LIMIT 500";
                             $db->sql($sql);
                             $result = $db->getResult();
                             foreach ($result as $value) {

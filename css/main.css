@@ -4556,16 +4556,15 @@ ul.traffic-sources .symbol.pink {
   background-image: linear-gradient(right, #3da285, #80c8a5);
 }
 
-
 .simple-widget.purple {
   background-color: #b580ff;
   /* Fallback Color */
   background-image: -webkit-gradient(
-  linear,
-  left top,
-  left bottom,
-  from(#7e39ff),
-  to(#b580ff)
+    linear,
+    left top,
+    left bottom,
+    from(#7e39ff),
+    to(#b580ff)
   );
   /* Saf4+, Chrome */
   background-image: -webkit-linear-gradient(right, #7e39ff, #b580ff);
@@ -4577,9 +4576,8 @@ ul.traffic-sources .symbol.pink {
   background-image: -o-linear-gradient(right, #7e39ff, #b580ff);
   /* Opera 11.10+ */
   background-image: linear-gradient(right, #7e39ff, #b580ff);
-  }
-  
-  
+}
+
 /*************** 9 O. Plain widget ***************/
 
 .plain-widget {
@@ -4842,7 +4840,6 @@ ul.traffic-sources .symbol.pink {
 }
 
 /*************** 9 U. Projects Table ***************/
-
 .projects-table.table {
   color: #8796af;
 }
