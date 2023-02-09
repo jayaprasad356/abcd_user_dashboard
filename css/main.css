@@ -4534,6 +4534,52 @@ ul.traffic-sources .symbol.pink {
   background-image: linear-gradient(right, #ff7e39, #ffb280);
 }
 
+.simple-widget.green {
+  background-color: #80c8a5;
+  /* Fallback Color */
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#3da285),
+    to(#80c8a5)
+  );
+  /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(right, #3da285, #80c8a5);
+  /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(right, #3da285, #80c8a5);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(right, #3da285, #80c8a5);
+  /* IE10 */
+  background-image: -o-linear-gradient(right, #3da285, #80c8a5);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(right, #3da285, #80c8a5);
+}
+
+
+.simple-widget.purple {
+  background-color: #b580ff;
+  /* Fallback Color */
+  background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  from(#7e39ff),
+  to(#b580ff)
+  );
+  /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(right, #7e39ff, #b580ff);
+  /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(right, #7e39ff, #b580ff);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(right, #7e39ff, #b580ff);
+  /* IE10 */
+  background-image: -o-linear-gradient(right, #7e39ff, #b580ff);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(right, #7e39ff, #b580ff);
+  }
+  
+  
 /*************** 9 O. Plain widget ***************/
 
 .plain-widget {

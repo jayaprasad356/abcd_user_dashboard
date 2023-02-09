@@ -32,7 +32,7 @@ $currentdate = date('Y-m-d');
       content="Admin, Dashboard, Bootstrap 4 Admin Dashboard, Bootstrap 4 Admin Template, Bootstrap 4 Admin Template, Sales, Admin Dashboard, Traffic, Tasks, Revenue, Orders, Invoices, Projects, Invoices, Dashboard, Bootstrap4, Sass, CSS3, HTML5, Responsive Dashboard, Responsive Admin Template, Admin Template, Best Admin Template, Bootstrap Template, Themeforest"
     />
     <meta name="author" content="Bootstrap Gallery" />
-    <link rel="shortcut icon" href="img/favicon.png"  width=500/>
+    <link rel="shortcut icon" href="img/favicons.jpeg" class="img-fluid"/>
     <title>ABCD Web</title>
 
     <!--
@@ -91,13 +91,11 @@ $currentdate = date('Y-m-d');
         <div class="container-fluid">
           <!-- Row start -->
           <div class="row gutters">
-            <div class="col-xl-7 col-lg-7 col-md-6 col-sm-7 col-7">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
               <!-- BEGIN .logo -->
               <div class="logo-block">
-                <a href="" class="logo">
-                  <img src="img/logo.png" alt="ABCD Admin Dashboard" width=100 />
-                </a>
-               
+                <a href="">
+                  <img src="img/logos.jpeg" style="height:100px;width:250px;"  alt="ABCD Admin Dashboard" />
                 </a>
               </div>
               <!-- END .logo -->
@@ -177,7 +175,7 @@ $currentdate = date('Y-m-d');
         <div class="main-content">
               <!-- Row start -->
               <div class="row gutters">
-                <div class="col-6 col-md-3">
+                <div class="col-12 col-md-3">
                   <div class="simple-widget">
                     <!-- <div class="growth">+125</div> -->
                     <h3><?php
@@ -200,8 +198,8 @@ $currentdate = date('Y-m-d');
                     </div> -->
                   </div>
                 </div>
-                <div class="col-6 col-md-3">
-                  <div class="simple-widget">
+                <div class="col-12 col-md-3">
+                  <div class="simple-widget green">
                     <!-- <div class="growth">+25</div> -->
                     <h3><?php
                                 $sql = "SELECT id FROM users WHERE id IS NOT NULL AND task_type='champion'";
@@ -223,7 +221,7 @@ $currentdate = date('Y-m-d');
                     </div> -->
                   </div>
                 </div>
-                <div class="col-6 col-md-3">
+                <div class="col-12 col-md-3">
                   <div class="simple-widget orange">
                     <!-- <div class="growth">+19</div> -->
                     <h3><?php
@@ -246,8 +244,8 @@ $currentdate = date('Y-m-d');
                     </div> -->
                   </div>
                 </div>
-                <div class="col-6 col-md-3">
-                  <div class="simple-widget danger">
+                <div class="col-12 col-md-3">
+                  <div class="simple-widget purple">
                     <h3><?php
                               $sql = "SELECT SUM(today_codes)*(0.17) AS total_earnings FROM users";
                               $db->sql($sql);
