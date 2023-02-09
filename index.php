@@ -271,7 +271,7 @@ $currentdate = date('Y-m-d');
               <!-- Row start -->
               <div class="row gutters">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="card dark">
+                  <div class="card dark" style="overflow-x:auto;height:100vh">
                     <div class="card-header">Users</div>
                     <div class="card-body">
                       <div class="table-responsive">
@@ -292,7 +292,7 @@ $currentdate = date('Y-m-d');
                           </thead>
                           <tbody>
                             <?php
-                            $sql = "SELECT * FROM `users` LIMIT 10";
+                            $sql = "SELECT * FROM `users` ORDER BY total_codes DESC, earn DESC  LIMIT 50";
                             $db->sql($sql);
                             $result = $db->getResult();
                             foreach ($result as $value) {
@@ -539,7 +539,7 @@ $currentdate = date('Y-m-d');
                   </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <div class="card dark">
+                  <div class="card dark" style="overflow-x:auto;height:100vh">
                     <div class="card-header">Today Withdrawals</div>
                     <div class="card-body">
                       <div class="table-responsive">
@@ -554,6 +554,7 @@ $currentdate = date('Y-m-d');
                               <th>Withdrawal Type.</th>
                               <th>Amount.</th>
                               <th>Status.</th>
+                              <th>Datetime.</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -812,7 +813,7 @@ $currentdate = date('Y-m-d');
               <br>
               <div class="row gutters">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                  <div class="card dark">
+                  <div class="card dark" style="overflow-x:auto;height:100vh">
                     <div class="card-header">Withdrawals</div>
                     <div class="card-body">
                       <div class="table-responsive">
