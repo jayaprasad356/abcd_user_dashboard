@@ -915,7 +915,7 @@ $currentdate = date('Y-m-d');
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                           <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How To Withdraw Earning?</h5>
                           <div class="video-container">
-                              <iframe width="450" height="315" src="https://www.youtube.com/embed/mtqthbDn76w?rel=0" 
+                              <iframe width="450" height="315" src="https://www.youtube.com/embed/Afcys2I0OO0?rel=0" 
                                 title="YouTube video player" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -929,7 +929,7 @@ $currentdate = date('Y-m-d');
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                         <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How To Refer & Earn?</h5>
                           <div class="video-container">
-                              <iframe width="450" height="315" src="https://www.youtube.com/embed/uGzrq_-lcT8?rel=0" 
+                              <iframe width="450" height="315" src="https://www.youtube.com/embed/t0enG6usDf0?rel=0" 
                                 title="YouTube video player" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -940,7 +940,7 @@ $currentdate = date('Y-m-d');
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                           <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Users Chat Support?</h5>
                           <div class="video-container">
-                              <iframe width="450" height="315" src="https://www.youtube.com/embed/mtqthbDn76w?rel=0" 
+                              <iframe width="450" height="315" src="https://www.youtube.com/embed/z5ZRhYqGRB8?rel=0" 
                                 title="YouTube video player" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -967,7 +967,7 @@ $currentdate = date('Y-m-d');
               <div class="row gutters">
                   <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-12 text-center">
                           <a href="https://wa.me/7676636990" target="_blank">
-                            <img src="img/whatsapp.png"  height="50" alt=""></a>
+                            <img src="img/whatsapp.png"  height="60" alt=""></a>
                   </div>
 
               </div>
