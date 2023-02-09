@@ -885,66 +885,56 @@ $currentdate = date('Y-m-d');
                               </iframe>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                          <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How to Work In Regular Task?</h5>
-                          <div class="video-container">
-                              <iframe width="450" height="315" src="https://www.youtube.com/embed/uGzrq_-lcT8?rel=0" 
+                          <h5 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How to Work In Regular Task?</h5>
+                              <iframe width="100%" height="300" src="https://www.youtube.com/embed/uGzrq_-lcT8?rel=0" 
                                 title="YouTube video player" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen>
                               </iframe>
-                          </div>
                     </div>
                   </div>
                   <br>
                 
                   <div class="row gutters">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                        <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How To Work In Champion Task?</h5>
-                          <div class="video-container">
-                              <iframe width="450" height="315" src="https://www.youtube.com/embed/l_ddxKWNZqI?rel=0" 
+                        <h5 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How To Work In Champion Task?</h5>
+                              <iframe width="100%" height="300" src="https://www.youtube.com/embed/l_ddxKWNZqI?rel=0" 
                                 title="YouTube video player" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen>
                               </iframe>
-                          </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                          <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How To Withdraw Earning?</h5>
-                          <div class="video-container">
-                              <iframe width="450" height="315" src="https://www.youtube.com/embed/Afcys2I0OO0?rel=0" 
+                          <h5 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How To Withdraw Earning?</h5>
+                              <iframe width="100%" height="300" src="https://www.youtube.com/embed/Afcys2I0OO0?rel=0" 
                                 title="YouTube video player" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen>
                               </iframe>
-                          </div>
                     </div>
                   </div>
                   <br>
                   <div class="row gutters">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                        <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How To Refer & Earn?</h5>
-                          <div class="video-container">
-                              <iframe width="450" height="315" src="https://www.youtube.com/embed/t0enG6usDf0?rel=0" 
+                        <h5 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How To Refer & Earn?</h5>
+                              <iframe width="100%" height="300" src="https://www.youtube.com/embed/t0enG6usDf0?rel=0" 
                                 title="YouTube video player" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen>
                               </iframe>
-                          </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                          <h5 class="text-center" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Users Chat Support?</h5>
-                          <div class="video-container">
-                              <iframe width="450" height="315" src="https://www.youtube.com/embed/z5ZRhYqGRB8?rel=0" 
+                          <h5 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Users Chat Support?</h5>
+                              <iframe width="100%" height="300" src="https://www.youtube.com/embed/z5ZRhYqGRB8?rel=0" 
                                 title="YouTube video player" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen>
                               </iframe>
-                          </div>
                     </div>
                   </div>
                   <br>
