@@ -161,13 +161,13 @@ $currentdate = date('Y-m-d');
                       <a class="btn btn-success">Trial Champion Task</a>
                     </div>
                   </div> -->
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                  <!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
                     <div class="daterange-container">
                       <div id="reportrange" class="form-control">
                         <span></span> <i class="icon-chevron-down down-arrow"></i>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
       </header>
@@ -808,7 +808,7 @@ $currentdate = date('Y-m-d');
                 </div>
               </div>
               <br>
-              <h3 class="text-center">Yesterday Paid Withdrawals</h3>
+              <h3 class="text-center">Recent Paid Withdrawals</h3>
               <br>
               <div class="row gutters">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
