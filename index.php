@@ -95,7 +95,7 @@ $currentdate = date('Y-m-d');
               <!-- BEGIN .logo -->
               <div class="logo-block">
                 <a href="">
-                  <img src="img/logos.jpeg" style="height:100px;width:250px;"  alt="ABCD Admin Dashboard" />
+                  <img src="img/logos.jpeg" style="height:100px;width:100px;"  alt="ABCD Admin Dashboard" />
                 </a>
               </div>
               <!-- END .logo -->
