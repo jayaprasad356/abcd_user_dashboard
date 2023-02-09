@@ -299,10 +299,11 @@ $currentdate = date('Y-m-d');
                             $sql = "SELECT * FROM `users` ORDER BY today_codes DESC, earn DESC  LIMIT 1000";
                             $db->sql($sql);
                             $result = $db->getResult();
+                            $row_number=1;
                             foreach ($result as $value) {
                             ?>
                             <tr>
-                              <td><?php echo $value['id']; ?>.</td>
+                              <td>  <?php echo $row_number++ ?>.</td>
                               <td>
                                 <i class="icon-vinyl text-success"></i><?php echo $value['name']; ?>
                               </td>
