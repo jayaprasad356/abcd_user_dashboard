@@ -186,7 +186,7 @@ $currentdate = date('Y-m-d');
         <div class="main-content">
               <!-- Row start -->
               <div class="row gutters">
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-4">
                   <div class="simple-widget">
                     <!-- <div class="growth">+125</div> -->
                     <h3><?php
@@ -209,7 +209,7 @@ $currentdate = date('Y-m-d');
                     </div> -->
                   </div>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-4">
                   <div class="simple-widget green">
                     <!-- <div class="growth">+25</div> -->
                     <h3><?php
@@ -232,7 +232,7 @@ $currentdate = date('Y-m-d');
                     </div> -->
                   </div>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-4">
                   <div class="simple-widget orange">
                     <!-- <div class="growth">+19</div> -->
                     <h3><?php
@@ -255,7 +255,7 @@ $currentdate = date('Y-m-d');
                     </div> -->
                   </div>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-4">
                   <div class="simple-widget purple">
                     <h3><?php
                               $date = date('Y-m-d');
@@ -269,6 +269,30 @@ $currentdate = date('Y-m-d');
                               echo 'Rs.' .$res[0]['total_earnings'];
                               ?></h3>
                     <p> Last Month Paid Withdrawals</p>
+                    <!-- <div class="progress sm">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 48%"
+                        aria-valuenow="48"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="simple-widget pink">
+                    <h3><?php
+                              $date = date('Y-m-d');
+                              $sql = "SELECT SUM(amount) AS total_earnings 
+                                      FROM withdrawals 
+                                      WHERE datetime <= '$date'";                              
+                              $db->sql($sql);
+                              $res = $db->getResult();
+                              echo 'Rs.' .$res[0]['total_earnings'];
+                              ?></h3>
+                    <p>Total Paid Withdrawals</p>
                     <!-- <div class="progress sm">
                       <div
                         class="progress-bar"

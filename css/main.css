@@ -4578,6 +4578,29 @@ ul.traffic-sources .symbol.pink {
   background-image: linear-gradient(right, #7e39ff, #b580ff);
 }
 
+
+.simple-widget.pink {
+  background-color: #ff69b4;
+  /* Fallback Color */
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ff69b4),
+    to(#ff1493)
+  );
+  /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(right, #ff69b4, #ff1493);
+  /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(right, #ff69b4, #ff1493);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(right, #ff69b4, #ff1493);
+  /* IE10 */
+  background-image: -o-linear-gradient(right, #ff69b4, #ff1493);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(right, #ff69b4, #ff1493);
+}
+
 /*************** 9 O. Plain widget ***************/
 
 .plain-widget {
