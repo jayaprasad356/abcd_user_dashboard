@@ -917,7 +917,7 @@ $currentdate = date('Y-m-d');
                   <div class="row gutters">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                         <h5 style="font-family:Monospace;">How To Signup?</h5>
-                              <iframe width="100%" height="300" src="https://www.youtube.com/embed/SIQOM_ALnDI?rel=0" 
+                              <iframe width="100%" height="300" src="https://www.youtube.com/embed/bOonzE1zj9E?rel=0" 
                                 title="YouTube video player" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -926,7 +926,7 @@ $currentdate = date('Y-m-d');
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                           <h5 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">How to Work In Regular Task?</h5>
-                              <iframe width="100%" height="300" src="https://www.youtube.com/embed/SIQOM_ALnDI?rel=0" 
+                              <iframe width="100%" height="300" src="https://www.youtube.com/embed/bOonzE1zj9E?rel=0" 
                                 title="YouTube video player" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
